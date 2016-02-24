@@ -1,0 +1,19 @@
+body
+{
+	background: rgb(58,114,108); /*fondo*/
+	color: #D5F9F9; /*letras*/
+	margin: 0 auto ;
+	max-width: 1024px;
+	text-align: justify;
+	font-family: cursive;
+}
+
+.formato
+{
+	background: #11A7A6;
+	margin: 30px 300px 30px 300px;
+	padding:10px 10px 30px 10px;
+	border-radius: 30px;
+	
+
+}
