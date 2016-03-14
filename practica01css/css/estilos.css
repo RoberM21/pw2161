@@ -5,6 +5,25 @@ body
 	margin 0 auto;
 	max-width: 1024px;
 }
+
+form
+{
+	float: right;
+	margin-top: -28px;
+	margin-right: 20px;
+}
+
+form input
+{
+	border-radius: 5px;
+}
+
+form input[type="Button"]
+{
+	background: green;
+	color: white;
+}
+
 header
 {
 	background: #B3D8EB; 
@@ -14,7 +33,11 @@ header nav
 {
 	background: #0E6CB0;
 	border-radius: 3px;
-	padding: 1px 0px 1px 0px;
+	margin: 0 auto;
+	padding-top: 0px;
+	padding-bottom: 1px;
+	width: 98%;
+
 }
 
 header nav ul li
@@ -23,8 +46,17 @@ header nav ul li
 	display: inline-block;
 	margin-right: 33px;
 }
-
-#logo
+#seccion01 article
+{
+	text-align: center;
+}
+#seccion01 article img
+{
+	border: 5px solid rgba(150,150,150,0.5);
+	margin-top: 8px;
+	width: 97%;
+}
+#logo 
 {
 	margin-top: -250px;
 }
