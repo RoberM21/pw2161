@@ -1,0 +1,80 @@
+body
+{
+	border: 1px solid red;
+	font-size: 16px;
+	margin: 0 auto;
+	max-width: 1078px; /*el diseñador lo quiso*/
+}
+
+header nav
+{
+	margin-left: 220px;
+}
+
+header nav ul li
+{
+	border-bottom: 1px solid gray;
+	color: gray;
+	display: inline-block;
+	font-size: 1.5em;
+	margin-right: 15px;
+}
+
+header input 
+{
+	float: right;
+	margin-right:-235px;
+	position: relative;
+}
+
+#granthams
+{
+	margin-top: 20px;
+	margin-left: 25px;
+}
+
+#paint
+{
+	float: right;
+	margin-top: 20px;
+}
+
+#PrimerSeccion
+{
+	margin-top: 80px;
+}
+#PrimerSeccion article
+{
+	display: inline-block;
+	margin-left: 25px;	
+	vertical-align: top;
+}
+#secc01art01
+{
+	width: 60%;
+}
+#secc01art02
+{
+	width: 30%;
+}
+#bgoffer
+{
+	left:380px;
+	position: absolute;
+	top: 150px;
+}
+#TerceraSeccion article img 
+{
+	vertical-align: middle;
+}
+.NumeroTelefono
+{
+	color: #FF0099;
+	font-size: 2.5em;
+	font-weight: bold;
+}
+.wecanoffer
+{
+	color: #FF0099;
+	font-size: 3.5em;
+}
