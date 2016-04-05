@@ -1,0 +1,46 @@
+body
+{
+	font-size: 16px;
+	margin: 0 auto;
+	max-width: 1024px;
+}
+header
+{
+	font-family: arial;
+	color: black;
+}
+
+header nav ul
+{
+
+	background: -webkit-linear-gradient(top,#D64E04 -85%,#F7AB68,#D64E04);
+	border-radius: 10px;
+}
+
+header nav ul li
+{
+
+	font-size: 11,5px;
+	padding: 10px;
+	display: inline-block;
+	color: white;
+}
+#section1
+{
+	
+}
+#redessociales
+{
+	margin-left: 60%;
+	float: right;
+}
+#barra
+{
+	background: -webkit-linear-gradient(top,#D64E04 -85%,#F7AB68,#D64E04);
+	border-radius: 8px;
+	padding: 10px 150px 10px 150px;
+	font-size: 14px;
+	color: white;
+	font-weight: bold;
+	margin-top: 20px
+}

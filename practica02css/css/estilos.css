@@ -6,6 +6,11 @@ body
 	max-width: 1078px; /*el diseñador lo quiso*/
 }
 
+header
+{
+	color: white;
+}
+
 header nav
 {
 	margin-left: 220px;
