@@ -1,0 +1,118 @@
+body
+{
+	background: #ECECEE;
+	font-size: 16px;
+	max-width: 1366px;
+	margin: 0 auto;
+}
+body header 
+{
+	background: #265D8E;
+}
+body header nav
+{
+	background: #ECECEE;
+}
+body section ul
+{
+background: #20507B;
+color: #ECECEE;
+margin-top: -10px;
+padding: 10px;
+width: 206px;
+}
+section ul li
+{
+	margin-bottom: 8px;
+}
+section article
+{
+padding-left: 5px;
+}
+
+#nav
+{
+	margin-left: 59%;
+	padding-bottom: 30px
+}
+#imgnav
+{
+	width: 175px; height: 55px;
+}
+#logo
+{
+	margin-left: 37%;
+}
+#section1
+{
+	margin-left: 20px;
+}
+#barras
+{
+	width: 222px; height: 37px;
+	padding-bottom: 10px
+}
+#article2
+{
+	background: #FEFEFE;
+	width: 227px;
+}
+#cubos
+{
+	width: 110px; height:80px; 
+}
+#section2
+{
+	background:#FEFEFE;
+	padding: 20px 40px 40px 40px;
+	float: right;
+	margin-top: -695px;
+	margin-right: 20px;
+	border-radius: 8px;
+	
+}
+#articleverde,#articleazul,#articlelila,#articlerojo
+{
+	width: 160px; height:120px;
+	padding: 10px 35px 30px 35px;
+	text-align: center;
+	border-radius: 5px;
+	color: #ECECEE;
+	display: inline-block;
+	margin-right: 10px;
+
+}
+#articleverde
+{
+	background:#23A72B;
+}
+#articleazul
+{
+	background: rgb(33,110,167);
+}
+#articlelila
+{
+	background: #7E23A4
+}
+#articlerojo
+{
+	background: rgb(165,28,31);
+}
+#usuarios
+{
+	background: rgb(76,109,172);
+	color: #ECECEE;
+	width: 160px; height: 180px;
+	padding: 10px 35px 30px 35px;
+	text-align: center;
+	display: inline-block;
+	margin-right: 10px;
+}
+#usu
+{
+	width: 160px; height:140px; 
+}
+.panels
+{
+	width: 960px; height:225px;
+}
