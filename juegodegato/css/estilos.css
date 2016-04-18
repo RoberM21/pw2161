@@ -1,0 +1,27 @@
+body 
+{
+	font-size: 16px;
+	margin: 0 auto;
+	max-width: 1024px;
+}
+body h1
+{
+	color: black;
+	font-weight: bold;
+	font-size:1.3em;
+	text-align: center;
+}
+form
+{
+	
+}
+table
+{
+	border-collapse: collapse;
+	margin: 0 auto;
+	text-align: center;
+}
+#boton1
+{
+	
+}
