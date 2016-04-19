@@ -6,22 +6,48 @@ body
 }
 body h1
 {
-	color: black;
-	font-weight: bold;
-	font-size:1.3em;
-	text-align: center;
+ text-align: center;
+}
+body h1 input[type="text"]
+{
+	border: none;
+	background: white;
+	color:black;
+	font-size: 1.1em;
+	width: 30px;
 }
 form
 {
-	
+	margin-top: 45px;
 }
-table
+form table
 {
 	border-collapse: collapse;
+	height: 600px;
 	margin: 0 auto;
 	text-align: center;
+	width: 600px;
 }
-#boton1
+form input[type="button"]
 {
-	
+	border: none;
+	background: white;
+	color: white;
+	height: 199px;
+	width: 199px;
 }
+
+#tr1, #tr2
+{
+	border-bottom: 5px solid red;
+}
+
+.bordederecha
+{
+	border-right: 5px solid red;
+	margin:none;
+}
+
+
+
+

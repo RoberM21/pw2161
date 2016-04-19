@@ -4,25 +4,26 @@
 	<meta charset="UTF-8">
 	<title>Juego de gato</title>
 	<link rel="stylesheet" href="css/estilos.css">
+	<script src="js/gato.js"></script>
 </head>
 <body>
 	<h1>Juego de gato <input type="text" value="1" onclick="Contador(this.value);"></h1>
 	<form action="#" name="juegoGato">
 		<table>
-			<tr>
-				<td> <input type="button" onclick="click();" id="boton1"></td>
-				<td> <input type="button" onclick="click();" id="boton2"></td>
-				<td> <input type="button" onclick="click();" id="boton3"></td>
+			<tr id="tr1">
+				<td class="bordederecha"> <input type="button" onclick="clic(this.name);" name="boton1"></td>
+				<td class="bordederecha"> <input type="button" onclick="clic();" name="boton2"></td>
+				<td> <input type="button" onclick="clic();" name="boton3"></td>
+			</tr>
+			<tr id="tr2">
+				<td class="bordederecha"> <input type="button" onclick="clic();" name="boton4"></td>
+				<td class="bordederecha"> <input type="button" onclick="clic();" name="boton5"></td>
+				<td> <input type="button" onclick="clic();" name="boton6"></td>
 			</tr>
 			<tr>
-				<td> <input type="button" onclick="click();" id="boton4"></td>
-				<td> <input type="button" onclick="click();" id="boton5"></td>
-				<td> <input type="button" onclick="click();" id="boton6"></td>
-			</tr>
-			<tr>
-				<td> <input type="button" onclick="click();" id="boton7"></td>
-				<td> <input type="button" onclick="click();" id="boton8"></td>
-				<td> <input type="button" onclick="click();" id="boton9"></td>
+				<td class="bordederecha"> <input type="button" onclick="clic();" name="boton7"></td>
+				<td class="bordederecha"> <input type="button" onclick="clic();" name="boton8"></td>
+				<td> <input type="button" onclick="clic();" name="boton9"></td>
 			</tr>
 		</table>
 	</form>
