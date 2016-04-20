@@ -1,0 +1,50 @@
+body 
+{
+	margin: 0 auto;
+	max-width: 1024px;
+	border: 2px solid green;
+	font-size: 16px;
+}
+
+table
+{
+	margin: 0 auto;
+	border-collapse: collapse;	
+}
+
+table tr td
+{
+	width: 50px;
+	padding: 5%;
+}
+
+table tr td input
+{
+	max-width: 100%;
+	border-style: none;
+	background: none;
+	text-align: center;
+	font-size:30px;
+}
+
+#t
+{
+	text-align: center;
+	color: gray;
+}
+
+#t12,#t22,#t32
+{
+ border-left: 2px solid hotpink;
+ border-right: 2px solid hotpink;
+}
+
+#t21,#t22,#t23
+{
+	border-top: 2px solid hotpink;
+	border-bottom: 2px solid hotpink;
+}
+
+
+
+
