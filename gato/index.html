@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>Juego del gato</title>
 	<link rel="stylesheet" href="css/estilosGato.css">
 	<script src="js/javascriptGato.js"></script>
 </head>
-<body>
+<body onload="iniciaGato();" unload="">
 	<header>
-		<h1 id="juegogato">Juego del Gato</h1>
+		<h1 id="titulojuego">Juego del Gato</h1>
 	</header>
 	<section>
 		<article>
@@ -26,10 +26,11 @@
 				</tr>
 				<tr>
 					<td onclick="escribe(this.id)"id="tresuno">&nbsp;</td>
-					<td onclick="escribe(this.id)" id="tresdos">&nbsp;</td>
+					<td onclick="escribe(this.id)"id="tresdos">&nbsp;</td>
 					<td onclick="escribe(this.id)"id="trestres">&nbsp;</td>
 				</tr>
 			</table>
+			<button onclick="Borrar();">Reinicia juego</button>
 		</article>
 	</section>
 </body>
