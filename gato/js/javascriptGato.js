@@ -96,6 +96,6 @@ function escribe(casilla)
 }
 function Borrar()
 {
-	localstorage.removeItem("webCuentaJuego");
+	localStorage.removeItem("webCuentaJuego");
 	iniciaGato();
 }
