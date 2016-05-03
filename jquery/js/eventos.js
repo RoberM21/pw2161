@@ -11,7 +11,21 @@ var inicio = function()
 	}
 	var clicBoton2 = function()
 	{
-		alert("Boton 2");
+		$.ajax({
+			beforeSend:function(){
+				console.log("Espere...");
+			},
+		  url: 'https://randomuser.me/api/',
+		  dataType: 'json',
+		  success: function(data){
+		  	console.log(data);
+		  	alert(data.results[0].name.first+
+		  		" "+data.results[0].name.last);
+		  },
+		  error:function(xhr,error,throws){
+
+		  }
+		});
 	}
 	var teclaUnInput = function(tecla)
 	{
@@ -23,7 +37,7 @@ var inicio = function()
 	}
 	//prepara los eventos de todos mis objetos
 	$("#miBoton").off("click",clicBoton);
-	$("#miBoton").on("click",clicBoton);
+	$("#miBoton").on("click",clicBoton2);
 	//se lleva el elemento que teclea
 	$("#unInput").on("keypress",teclaUnInput)
 }
