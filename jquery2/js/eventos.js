@@ -18,16 +18,37 @@ var iniciaApp = function()
 			alert("La clave no debe ser vacio");
 			$("#txtClave").focus();
 		}
-		//verificar usuario y contraseña
-		if(usuario == "pw" && clave == "1234")
-		{
-			//alert("Bienvenido "+ usuario );
-			//Dar entrada al usuario
-			$("#datosUsuarios").hide();//escondemos
-			$("nav").show("slow"); //mostramos
-		}
-		else
-			alert("Usuario y/o contraseña incorrecta(s)");
+		//2.-verificar usuario y contraseña
+		var parametros="accion=validaEntrada"+
+						"&usuario="+usuario+
+						"&clave="+clave+
+						"&id="+Math.random();
+		$.ajax({
+			beforeSend:function(){
+				console.log("Validar usuario");
+			},
+			cache:false,
+			type: "POST",
+			dataType: "json",
+			url: "php/funciones.php",
+			data:parametros,
+			success: function(response){
+
+			},
+			error: function(xhr,ajaxOptions,thrownError){
+				console.log("Algo salio mal");
+			}
+		})
+		//*** SIN PHP
+		// if(usuario == "pw" && clave == "1234")
+		// {
+		// 	//alert("Bienvenido "+ usuario );
+		// 	//Dar entrada al usuario
+		// 	$("#datosUsuarios").hide();//escondemos
+		// 	$("nav").show("slow"); //mostramos
+		// }
+		// else
+		// 	alert("Usuario y/o contraseña incorrecta(s)");
 			console.log("se disparo el submit");
 			
 	}
