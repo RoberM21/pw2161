@@ -19,7 +19,7 @@ var iniciaApp = function()
 			$("#txtClave").focus();
 		}
 		//2.-verificar usuario y contraseña
-		var parametros="accion=validaEntrada"+
+		var parametros="accion=validarEntrada"+
 						"&usuario="+usuario+
 						"&clave="+clave+
 						"&id="+Math.random();
@@ -33,7 +33,13 @@ var iniciaApp = function()
 			url: "php/funciones.php",
 			data:parametros,
 			success: function(response){
-
+				if (response.respuesta == true) {
+						$("#datosUsuarios").hide();
+						$("nav").show("slow");
+				}
+				else{
+					alert("Usuario/contraseña incorrecta(s)");
+				}
 			},
 			error: function(xhr,ajaxOptions,thrownError){
 				console.log("Algo salio mal");
