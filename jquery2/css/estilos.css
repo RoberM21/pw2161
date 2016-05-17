@@ -21,7 +21,10 @@ header nav ul li button
 {	
 	width: 89px;
 }
-	
+#h2
+{
+	text-align: center;
+}	
 #datosUsuarios
 {
 	width: 320px;

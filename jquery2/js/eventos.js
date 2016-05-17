@@ -39,12 +39,15 @@ var iniciaApp = function()
 				}
 				else{
 					alert("Usuario/contraseña incorrecta(s)");
+					document.getElementById('txtUsuario').value = "";
+					document.getElementById('txtClave').value = "";
+					$("#txtUsuario").focus();
 				}
 			},
 			error: function(xhr,ajaxOptions,thrownError){
 				console.log("Algo salio mal");
 			}
-		})
+		});
 		//*** SIN PHP
 		// if(usuario == "pw" && clave == "1234")
 		// {
