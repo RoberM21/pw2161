@@ -3,6 +3,7 @@ body
 	font-size: 16px;
 	margin: 0 auto;
 	max-width: 1024px;
+	text-align: center;
 }
 header h1
 {
@@ -21,9 +22,11 @@ header nav ul li button
 {	
 	width: 89px;
 }
-#h2
+#altaUsuarios
 {
-	text-align: center;
+	display: none;
+	margin: 0 auto;
+	width: 320px;
 }	
 #datosUsuarios
 {

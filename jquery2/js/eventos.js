@@ -61,6 +61,46 @@ var iniciaApp = function()
 			console.log("se disparo el submit");
 			
 	}
+
+	var Altas = function()
+	{
+		//mostramos el formulario
+		$("#altaUsuarios").show("slow");
+	}
+	var AltaUsuario = function()
+	{
+		event.preventDefault();
+		//alert($("#frmAltaUsuarios").serialize());
+		var datos = $("#AltaUsuario").serialize();
+		var parametros="accion=guardaUsuario&"+datos+
+					   "&id"+Math.random();
+		$.ajax({
+			beforeSend:function(){
+				console.log("Guardar Usuario");
+			},
+			cache:false,
+			type: "POST",
+			dataType: "json",
+			url: "php/funciones.php",
+			data:parametros,
+			success: function(response){
+				if(response.respuesta == true)
+				{
+					alert("Usuario registrado correctamente");
+				}
+				else
+				{
+					alert("No se puede guardar la informacion");
+				}
+			},
+			error: function(xhr,ajaxOptions,thrownError){
+			console.log("Algo salio mal");
+			}
+		});
+	}
+
+	$("#btnAltas").on("click",Altas);
 	$("#frmValidaEntrada").on("submit",validarEntrada);
+	$("#frmAltaUsuarios").on("submit",AltaUsuario);
 }
 $(document).on("ready",iniciaApp);
