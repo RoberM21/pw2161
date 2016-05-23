@@ -144,9 +144,34 @@ var iniciaApp = function()
 		});
 	}
 
+	var Consultas = function()
+	{
+		$("#consultasUsuarios").show("slow");
+		var parametros = "accion=Consultas&"+"&id="+Math.random();
+		$.ajax({
+			beforeSend:function(){
+				console.log("Baja Usuario");
+			},
+			cache:false,
+			type: "POST",
+			dataType: "json",
+			url: "php/funciones.php",
+			data: parametros,
+			success: function(response){
+				if (response.respuesta){
+					$("#tablaConsultas").html(response.tabla);
+				}
+			},
+			error:function(xhr,ajax,thrownError){
+				console.log("Ha ocurrido un error");
+			}
+		});
+	}
+
 	$("#btnAltas").on("click",Altas);
 	$("#frmValidaEntrada").on("submit",validarEntrada);
 	$("#frmAltaUsuarios").on("submit",AltaUsuario);
-	$("#btnBajas").on("click",Bajas)
+	$("#btnBajas").on("click",Bajas);
+	$("#btnConsultas").on("click",Consultas);
 }
 $(document).on("ready",iniciaApp);
