@@ -66,11 +66,13 @@ var iniciaApp = function()
 	{
 		//mostramos el formulario
 		$("#altaUsuarios").show("slow");
+		$("#frmAltaUsuarios").show("slow");
 		$("#altaUsuarios h2").html("Altas usuarios");
 				//Apago la funcion de Alta Usuario
 		$("#frmAltaUsuarios").on("submit",AltaUsuario);
 		//Enciendo la funcion de BajaUsuario para el mismo boton
 		$("#frmAltaUsuarios").off("submit",BajaUsuario);
+		$("#consultasUsuarios").hide();
 	}
 	var AltaUsuario = function()
 	{
@@ -92,6 +94,10 @@ var iniciaApp = function()
 				if(response.respuesta == true)
 				{
 					alert("Usuario registrado correctamente");
+					document.getElementById('txtNombreUsuario').val="";
+					document.getElementById('txtClaveUsuario').val="";
+					document.getElementById('txtTipoUsuario').val="vigente";
+					document.getElementById('txtDepartamento').val="";
 				}
 				else
 				{
@@ -107,11 +113,13 @@ var iniciaApp = function()
 	var Bajas = function()
 	{
 		$("#altaUsuarios").show("slow");
+		$("#frmAltaUsuarios").show("slow");
 		$("#altaUsuarios h2").html("Baja usuarios");
 		//Apago la funcion de Alta Usuario
 		$("#frmAltaUsuarios").off("submit",AltaUsuario);
 		//Enciendo la funcion de BajaUsuario para el mismo boton
 		$("#frmAltaUsuarios").on("submit",BajaUsuario);
+		$("#consultasUsuarios").hide();
 	}
 	var BajaUsuario = function()
 	{
@@ -147,6 +155,8 @@ var iniciaApp = function()
 	var Consultas = function()
 	{
 		$("#consultasUsuarios").show("slow");
+		$("#altaUsuarios h2").html("Consulta");
+		$("#frmAltaUsuarios").hide();
 		var parametros = "accion=Consultas&"+"&id="+Math.random();
 		$.ajax({
 			beforeSend:function(){
@@ -168,10 +178,21 @@ var iniciaApp = function()
 		});
 	}
 
+	var bajaDinamica = function()
+	{
+		var usuario	= $(this).attr("id");
+		alert(usuario);
+	}
+
 	$("#btnAltas").on("click",Altas);
 	$("#frmValidaEntrada").on("submit",validarEntrada);
 	$("#frmAltaUsuarios").on("submit",AltaUsuario);
 	$("#btnBajas").on("click",Bajas);
 	$("#btnConsultas").on("click",Consultas);
+	//EVENTOS DINAMICOS
+	//$("#tablaConsultas").on("type[button]","click",bajaDinamica);
+	$("#tablaConsultas").on("click","button",bajaDinamica);
+	//Otra forma
+	$("#tablaConsultas > input").on("click",bajaDinamica);
 }
 $(document).on("ready",iniciaApp);

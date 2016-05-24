@@ -60,11 +60,9 @@ function guardaUsuario()
 	//Seleccionar la BD
 	mysql_select_db("cursopw");
 	$guarda = sprintf("insert into usuarios values(%s,%s,%s,%d)",$usuario,$clave,$tipo,$depto);
-	mysql_query("$guarda");
+	mysql_query($guarda);
 	if(mysql_affected_rows()>0)
-	{
 		$respuesta=true;
-	}
 	$salidaJSON = array('respuesta' => $respuesta);
 	print json_encode($salidaJSON);
 }
@@ -78,9 +76,7 @@ function bajaUsuario()
 	//$baja = sprintf("update from usuarios set tipousuario='baja' where usuario=%s",$usuario)
 	mysql_query($baja);
 	if(mysql_affected_rows()>0)
-	{
 		$respuesta=true;
-	}
 	$salidaJSON = array('respuesta' => $respuesta);
 	print json_encode($salidaJSON);
 }
@@ -100,6 +96,7 @@ function consultas()
 		$tabla.="<th>Usuario</th>";
 		$tabla.="<th>Tipo Usuario</th>";	
 		$tabla.="<th>Departamento</th>";	
+		$tabla.="<th>Acciones</th>";
 		$tabla.="</tr>";
 		
 		while ($registro = mysql_fetch_array($resultado)) {
@@ -107,6 +104,7 @@ function consultas()
 			$tabla.="<td>".$registro["usuario"]."</td>";
 			$tabla.="<td>".$registro["tipousuario"]."</td>";
 			$tabla.="<td>".$registro["departamento"]."</td>";
+			$tabla.="<td><button id='".$registro["usuario"]."' class='btn btn-danger'>Baja</button></td>";
 			$tabla.="</tr>";
 		}
 	}
