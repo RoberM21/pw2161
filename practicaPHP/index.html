@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Encuestas</title>
+	<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="js/jquery-2.2.3.js"></script>
+	<script src="js/eventos.js"></script>
+</head>
+<body>
+	<header>
+		<h1> Encuesta </h1>
+		<nav>
+			<ul>
+				<li><button id="btnAltas" class="btn btn-primary">Altas</button></li>
+				<li><button id="btnBajas" class="btn btn-danger">Bajas</button></li>
+				<li><button id="btnCambios" class="btn btn-info">Cambios</button></li>
+				<li><button id="btnConsultas" class="btn btn-default">Consultas</button></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+		<article>
+			<article class="panel panel-primary" id="altaEncuesta">
+				<article class="panel-body">
+					<h2>Alta</h2>
+					<form action="" id="frmAltaEncuesta" name="frmAltaEncuesta">
+					<input type="text" class="form-control" id="txtClave" name="txtClave" required placeholder="Clave de la encuesta">
+					<input type="text" class="form-control" id="txtNombre" name="txtNombre" required placeholder="Nombre de la encuesta">
+					<input type="text" class="form-control" id="txtPregunta1" name="txtPregunta1" required placeholder="Pregunta 1">
+					<input type="text" class="form-control" id="txtRespuesta1" name="txtRespuesta1" required placeholder="Respuesta 1">
+					<input type="text" class="form-control" id="txtPregunta2" name="txtPregunta2" required placeholder="Pregunta 2">
+					<input type="text" class="form-control" id="txtRespuesta2" name="txtRespuesta2" required placeholder="Respuesta 2">
+					<input type="text" class="form-control" id="txtPregunta3" name="txtPregunta3" required placeholder="Pregunta 3">
+					<input type="text" class="form-control" id="txtRespuesta3" name="txtRespuesta3" required placeholder="Respuesta 3">
+					<input type="text" class="form-control" id="txtFecha" name="txtFecha" required placeholder="Fecha">
+					<input type="text" class="form-control" id="txtSemestre" name="txtsemestre" required placeholder="Semestre">
+					<input type="submit" id="btnAltaEncuesta"  class="btn btn-success btn-lg btn-block" value="Guardar">
+					</form>
+				</article>
+			</article>
+		</article>
+		</section>
+	</main>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Examen Magico PW 3</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="js/eventos.js"></script>
+</head>
+<body>
+	<header>
+		<div class="page-header">
+			<h1>
+				Examen Magico
+			</h1>
+			<small>
+				Por Jesus Miguel Flores
+			</small>			
+		</div>
+		<nav>
+			<ul>
+				<li>
+					<button id="btnAltas" class="btn btn-success">
+						<span class="glyphicon glyphicon-plus" ></span>  Alta de un producto
+					</button>
+				</li>
+				<li>
+					<button id="btnBajas" class="btn btn-danger">
+						<span class="glyphicon glyphicon-minus" ></span>  Baja de un producto
+					</button>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<article id="artAltasBajas">
+			<h2>Descripcion del Producto</h2>
+			<input type="text" id="txtIdProducto" placeholder="ID del producto" class="form-control" autofocus>
+
+			<input type="text" id="txtNomProducto" placeholder="Nombre del producto" class="form-control" autofocus>
+
+			<input type="text" id="txtCategoria" placeholder="Categoria del producto" class="form-control">
+
+			<input type="text" id="txtSubcategoria" placeholder="SubCategoria del producto" class="form-control">
+
+			<input type="text" id="txtMarca" placeholder="Marca del producto" class="form-control">
+
+			<input type="text" id="txtPeso" placeholder="Peso del producto (KG)" class="form-control">
+
+			<input type="text" id="txtAltura" placeholder="Altura del producto (CMS)" class="form-control">
+
+			<input type="text" id="txtAnchura" placeholder="Anchura del producto (CMS)" class="form-control">
+
+			<input type="text" id="txtProfundidad" placeholder="Profundidad del producto (CMS)" class="form-control">
+
+			<!--BOTONES -->
+
+			<button class="btn btn-lg btn-block btn-success" id="btnGuardarProducto">
+				Guardar YA
+			</button>
+			<button class="btn btn-lg btn-block btn-danger" id="btnEliminarProducto">
+				Eliminar YA
+			</button>
+			
+		</article>
+	</section>
+	
+</body>
+</html>

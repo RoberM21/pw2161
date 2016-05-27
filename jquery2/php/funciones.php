@@ -56,7 +56,7 @@ function guardaUsuario()
 	$respuesta = false;
 	//Conectar al servidor de BD
 	//Servidor, Usuario, Clave
-	$conexion = mysql_connect("localhost","root","");
+	$conexion = mysql_connect("::1","root","");
 	//Seleccionar la BD
 	mysql_select_db("cursopw");
 	$guarda = sprintf("insert into usuarios values(%s,%s,%s,%d)",$usuario,$clave,$tipo,$depto);
